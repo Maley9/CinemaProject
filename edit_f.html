@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Edycja filmu</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <div class="logo"><img src="images/logo.png"></div>
+            <nav>
+                <ul>
+					<li><a href="index.html">Seanse</a></li>
+                    <li><a href="films.html">Filmy</a></li>
+                    <li><a href="login.html">Logowanie</a></li>
+					<li><a href="signup.html">Rejestracja</a></li>
+					<li><a href="#"><span class="material-icons" title="Wyloguj się">logout</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+<section class="field ls">
+       <div class="container flex">
+			      <div class="box-form card">
+				 <form action="" method="POST">
+                <h2>Edytuj film</h2>
+                 <form>
+                    <div class="form-control">
+                        <input type="text" name="tytul" placeholder="Tytuł pobrany z bazy" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="czas" placeholder="Czas trwania filmu pobrany z bazy" required>
+                    </div>
+                    <input type="submit" value="Zapisz zmniany" class="btn btn-dark">
+                </form>
+            </div>
+			</div>
+			 	   </section>
+    <footer class="footer bg-dark py-4">
+        <div class="container grid grid-3">
+            <div>
+				<h3>NASZE SEANSE</h3>
+                <a href="#"><span class="material-icons">facebook</span></a>
+            </div>
+            <nav>
+                <ul>
+					<li><a href="index.html">Seanse</a></li>
+                    <li><a href="films.html">Filmy</a></li>
+                    <li><a href="login.html">Logowanie</a></li>
+					<li><a href="signup.html">Rejestracja</a></li>
+                </ul>
+            </nav>
+                <ul>
+                    <li>adres: ul. Słoneczna 17, 153-123 Warszawa</li>
+                    <li>telefon: 85 310 31 72</li>
+                    <li>e-mail:	warszawa@naszeseanse.pl</li>
+                </ul>
+        </div>
+    </footer>
+</body>
+</html>

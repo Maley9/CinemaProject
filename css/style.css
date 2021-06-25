@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root {
+  --primary-color: #6977B8;
+  --secondary-color: #1C3FA8;
+  --light-color: #EBEDF5;
+  --dark-color: #242C4D;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #2e2e2e;
+  line-height: 2;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+.logo img{ 
+  width: 38%;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  background-color: var(--dark-color);
+  border-radius: 5px;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.box {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+
+.box h2 {
+  font-size: 30px;
+}
+
+.box p {
+  margin: 20px 0;
+}
+
+.box .grid {
+  overflow: visible;
+  grid-template-columns: auto auto;
+  gap: 30px;
+}
+
+.box-form {
+  position: relative;
+  top: 20px;
+  height: 350px;
+  width: 340px;
+  padding: 40px;
+  justify-self: flex-end;
+}
+
+.box-form .form-control {
+  margin: 25px 0;
+}
+
+.box-form input[type='text'],
+.box-form input[type='email'],
+.box-form input[type='password'] {
+  border: 0;
+  border: 1px solid #b4becb;
+  border-radius: 6px;
+  width: 100%;
+  padding: 3px;
+  font-size: 17px;
+}
+
+.room {
+  padding-top: 100px;
+}
+
+.room-txt {
+  max-width: 500px;
+  margin: auto;
+}
+
+.room .grid p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.date .grid {
+  grid-template-columns: auto auto;
+}
+
+.footer .material-icons {
+	font-size: 35px;
+}
+
+.field .grid {
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+}
+.ls {
+	height: 550px;
+}
+
+.tab td
+{ 
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align:center;
+	padding: 15px;
+	margin: 15px;
+	width: 50px;
+	height: 50px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.red
+{
+	color: red;
+}
+.green
+{
+	color: green;
+}
+
+.tab2 
+{
+	margin: 10px;
+	padding: 40px;
+}
+
+.tab2 td
+{ 
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align:center;
+	width: 160px;
+	height: 190px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.foto
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 400px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.card {
+  background-color: #fff;
+  color: #2e2e2e;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 30px;
+}
+
+.btn {
+  
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.bg-light {
+  background-color: var(--light-color);
+  color: #2e2e2e;
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: #fff;
+}
+
+.sm {
+  font-size: 16px;
+}
+
+.md {
+  font-size: 30px;
+}
+
+.lg {
+  font-size: 48px;
+}
+
+.xl {
+  font-size: 64px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.info {
+	padding-bottom: 30px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-3 {
+ grid-template-columns: repeat(3, 1fr);
+}
+
+.my-1 {
+  margin: 16px 0;
+}
+
+.my-2 {
+  margin: 24px 0;
+}
+
+.my-3 {
+  margin: 32px 0;
+}
+
+.my-4 {
+  margin: 48px 0;
+}
+
+.my-5 {
+  margin: 64px 0;
+}
+
+.py-1 {
+  padding: 16px 0;
+}
+
+.py-2 {
+  padding: 24 0;
+}
+
+.py-3 {
+  padding: 32px 0;
+}
+
+.py-4 {
+  padding: 48px 0;
+}
+
+.py-5 {
+  padding: 64px 0;
+}
+
+
